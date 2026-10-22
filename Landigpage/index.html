@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulso Fit Bairro | Treino Rápido de 45 min, Sem Filas e no Seu Bolso</title>
+  <meta name="description" content="A academia feita para o trabalhador de bairro: treinos rápidos em 45 minutos, sem filas de aparelhos, aberta das 05h às 23h e mensalidades justas com Matrícula Zero!">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pulso Fit Bairro - Treine Rápido, Perto de Casa e Sem Filas">
+  <meta property="og:description" content="Chega de perder tempo em filas. Treinos eficientes em 45 min, aberta das 05h às 23h. Garanta Matrícula Zero!">
+  <meta property="og:image" content="assets/images/hero_gym.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" id="promo-bar">
+    <div class="container announcement-content">
+      <span class="announcement-badge">⚡ OFERTA LIMITADA</span>
+      <p class="announcement-text">
+        <strong>Matrícula R$ 0 + 1º Mês com Desconto Especial:</strong> restam apenas <span class="vagas-count">7 vagas</span> com isenção hoje!
+      </p>
+      <a href="#oferta" class="announcement-link">Aproveitar Agora &rarr;</a>
+    </div>
+  </div>
+
+  <!-- 3. NAVBAR MINIMALISTA -->
+  <header class="navbar-wrapper" id="main-header">
+    <div class="container navbar-container">
+      <a href="#" class="brand-logo" aria-label="Pulso Fit Bairro Início">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">PULSO<span class="brand-accent">FIT</span></span>
+          <span class="brand-sub">ACADEMIA DE BAIRRO</span>
+        </div>
+      </a>
+
+      <!-- Status em Tempo Real -->
+      <div class="live-status-pill" id="nav-live-status">
+        <span class="status-dot pulsing"></span>
+        <span class="status-text">Aberto até às 23:00</span>
+      </div>
+
+      <!-- CTA Direto Sem Distrações -->
+      <div class="navbar-actions">
+        <a href="#planos" class="btn btn-primary btn-pill shadow-glow">
+          <span>Garantir Matrícula Zero</span>
+          <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 4. HERO SECTION COM CONVERSÃO DIRETA -->
+    <section class="hero-section" id="inicio">
+      <div class="hero-bg-accent"></div>
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="badge-pill badge-pink-soft">
+            <span class="badge-icon">⏱️</span>
+            <span>Feita para a rotina corrida do trabalhador</span>
+          </div>
+
+          <h1 class="hero-title">
+            Treine em <span class="highlight-green">45 minutos</span> no seu bairro, sem fila de aparelho e no seu bolso.
+          </h1>
+
+          <p class="hero-subtitle">
+            Aberta das <strong>05h às 23h</strong> para você treinar antes da jornada, no horário de almoço ou na volta do trabalho. Aparelhos duplicados, professores na sala e mensalidade justa sem taxa escondida.
+          </p>
+
+          <!-- FILTRO RÁPIDO DE HORÁRIOS E MODALIDADES -->
+          <div class="quick-filter-card" id="quick-filter">
+            <div class="filter-header">
+              <span class="filter-title">🔍 Encontre seu horário e treino ideal:</span>
+              <span class="filter-tag">Simulação Rápida</span>
+            </div>
+
+            <div class="filter-controls">
+              <!-- Seletor de Horário -->
+              <div class="filter-group">
+                <label for="filter-time">Qual é o seu melhor horário?</label>
+                <div class="custom-select-wrapper">
+                  <select id="filter-time" class="filter-select">
+                    <option value="manha-cedo">Antes do trabalho (05:00 às 08:00)</option>
+                    <option value="almoco">Horário de almoço (11:30 às 14:00)</option>
+                    <option value="tarde">Meio da tarde (14:00 às 17:00)</option>
+                    <option value="pos-trampo" selected>Depois do expediente (17:30 às 20:30)</option>
+                    <option value="noite-flex">Noite tranquila (20:30 às 23:00)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Seletor de Modalidade -->
+              <div class="filter-group">
+                <label for="filter-type">Seu objetivo principal:</label>
+                <div class="custom-select-wrapper">
+                  <select id="filter-type" class="filter-select">
+                    <option value="musculacao-rapida" selected>Musculação Express (Ficha 45 min)</option>
+                    <option value="queima-cardio">Queima Rápida & Resistência</option>
+                    <option value="coluna-postura">Alívio de dores nas costas e cansaço</option>
+                    <option value="funcional">Circuito Funcional Dinâmico</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <!-- Resultado Dinâmico do Filtro -->
+            <div class="filter-result-box" id="filter-result-box">
+              <div class="result-icon">⚡</div>
+              <div class="result-details">
+                <div class="result-headline" id="filter-result-title">Treino Recomendado: Circuito Express 45 min</div>
+                <div class="result-desc" id="filter-result-desc">Aparelhos com fluxo rápido e instrutor pronto para orientar seu ritmo pós-expediente.</div>
+              </div>
+              <a href="#planos" class="btn btn-primary btn-sm btn-pill" id="filter-cta-btn">Quero Esse Treino &rarr;</a>
+            </div>
+          </div>
+
+          <!-- Ações Rápidas Hero -->
+          <div class="hero-actions">
+            <a href="#oferta" class="btn btn-primary btn-lg btn-pill shadow-glow">
+              <span>Garantir Matrícula Zero</span>
+              <span class="btn-subtext">Sem fidelidade abusiva</span>
+            </a>
+            <a href="#planos" class="btn btn-outline btn-lg btn-pill">
+              <span>Ver Planos a partir de R$ 69,90</span>
+            </a>
+          </div>
+
+          <!-- Prova Social Imediata -->
+          <div class="hero-social-proof">
+            <div class="avatar-group">
+              <span class="avatar-circle">👨🏽‍💼</span>
+              <span class="avatar-circle">👩🏻‍🔧</span>
+              <span class="avatar-circle">👨🏾‍💻</span>
+              <span class="avatar-circle">👩🏼‍🏫</span>
+            </div>
+            <div class="proof-text">
+              <div class="proof-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-number">4.9 / 5.0</span>
+              </div>
+              <p class="proof-count">Mais de <strong>1.450 trabalhadores</strong> do bairro ativos</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Coluna Visual do Hero -->
+        <div class="hero-visual">
+          <div class="hero-image-wrapper">
+            <img src="assets/images/hero_gym.jpg" alt="Academia de bairro espaçosa e moderna com trabalhadores treinando com energia" class="hero-main-img" width="1024" height="576">
+            <div class="hero-img-overlay"></div>
+            
+            <!-- Badges Flutuantes -->
+            <div class="floating-badge badge-top-right">
+              <div class="badge-icon-bubble green">✓</div>
+              <div>
+                <strong>Sem Filas</strong>
+                <span>Aparelhos duplicados</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <div class="badge-icon-bubble pink">⏱️</div>
+              <div>
+                <strong>Treino 45 min</strong>
+                <span>Foco e resultado</span>
+              </div>
+            </div>
+
+            <div class="floating-pill-center">
+              <span class="live-pulse"></span>
+              <span>A 2 minutos do Terminal de Ônibus</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. SEÇÃO DE OFERTA E DESTAQUE PROMOCIONAL -->
+    <section class="promo-section" id="oferta">
+      <div class="container">
+        <div class="promo-card">
+          <div class="promo-header">
+            <div class="promo-tag-pill">
+              <span class="sparkle">✨</span>
+              <span>LOTE EXCLUSIVO DO TRABALHADOR</span>
+            </div>
+            <h2 class="promo-title">
+              Matrícula Zero + 1º Mês com 50% de Desconto!
+            </h2>
+            <p class="promo-subtitle">
+              Comece a cuidar da sua saúde e disposição física hoje mesmo. Sem taxa de adesão, sem taxa anual e sem surpresas na fatura.
+            </p>
+          </div>
+
+          <!-- Cronômetro de Urgência -->
+          <div class="countdown-wrapper">
+            <div class="countdown-label">
+              <span class="clock-icon">⏳</span>
+              Esta condição especial encerra em:
+            </div>
+            <div class="countdown-boxes" id="countdown-timer">
+              <div class="countdown-item">
+                <span class="countdown-value" id="hours">04</span>
+                <span class="countdown-unit">Horas</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-item">
+                <span class="countdown-value" id="minutes">32</span>
+                <span class="countdown-unit">Minutos</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-item">
+                <span class="countdown-value" id="seconds">18</span>
+                <span class="countdown-unit">Segundos</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Barra de Vagas Restantes -->
+          <div class="vagas-progress-container">
+            <div class="vagas-info">
+              <span>Vagas promocionais com isenção preenchidas hoje:</span>
+              <strong class="vagas-status">83% preenchido</strong>
+            </div>
+            <div class="progress-track">
+              <div class="progress-bar" style="width: 83%;"></div>
+            </div>
+            <span class="vagas-alert">⚠️ Apenas 7 vagas restantes para o seu bairro</span>
+          </div>
+
+          <div class="promo-cta-box">
+            <a href="#planos" class="btn btn-primary btn-xl btn-pill shadow-glow pulse-hover">
+              <span>Garantir Meu Cupom de Matrícula Zero</span>
+              <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+              </svg>
+            </a>
+            <p class="promo-microcopy">Garantia de 7 dias: se não gostar, devolvemos 100% do seu dinheiro.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. BLOCO DE BENEFÍCIOS E PROPOSTA DE VALOR (DIFERENCIAIS) -->
+    <section class="benefits-section" id="diferenciais">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="badge-pill badge-green-soft">
+            <span>DIFERENCIAIS REAIS</span>
+          </div>
+          <h2 class="section-title">
+            Criada para quem trabalha e não tem tempo a perder
+          </h2>
+          <p class="section-subtitle">
+            Nada de ambiente intimidador ou aparelhos monopolizados. Aqui você entra, treina com eficiência e segue o seu dia com mais energia.
+          </p>
+        </div>
+
+        <div class="benefits-grid">
+          
+          <!-- Card 1 -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper green-gradient">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Treino Rápido em 45 min</h3>
+            <p class="benefit-desc">
+              Método de treino dinâmico com fichas otimizadas para gerar máxima queima e força no tempo exato que você tem disponível.
+            </p>
+            <div class="benefit-pill">Sem enrolação</div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="benefit-card highlight-card">
+            <div class="benefit-icon-wrapper pink-gradient">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Sem Filas de Aparelhos</h3>
+            <p class="benefit-desc">
+              Equipamentos mais procurados duplicados e controle responsável de lotação por horário para você não ficar esperando ninguém liberar a máquina.
+            </p>
+            <div class="benefit-pill pill-pink">Mais agilidade</div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper green-gradient">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Preço Popular e Justo</h3>
+            <p class="benefit-desc">
+              Sem multas escondidas, sem taxa de manutenção anual fantasma. Um valor acessível que cabe no bolso de quem trabalha duro.
+            </p>
+            <div class="benefit-pill">Transparência total</div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper green-gradient">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Horário Flexível: 05h às 23h</h3>
+            <p class="benefit-desc">
+              Abra os olhos antes do sol ou passe aqui tarde da noite. A academia funciona nos momentos em que você realmente pode treinar.
+            </p>
+            <div class="benefit-pill">Seg a Sex 05h - 23h</div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper pink-gradient">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Pertinho de Você</h3>
+            <p class="benefit-desc">
+              No coração do bairro, a passos do ponto de ônibus e do comércio local. Dá para vir a pé sem perder tempo no trânsito.
+            </p>
+            <div class="benefit-pill pill-pink">Fácil acesso</div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="benefit-card">
+            <div class="benefit-icon-wrapper green-gradient">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </div>
+            <h3 class="benefit-title">Acompanhamento de Verdade</h3>
+            <p class="benefit-desc">
+              Instrutores atentos na sala para corrigir sua postura e tirar dúvidas sem empurrar personal trainer caro. Você nunca treina sozinho.
+            </p>
+            <div class="benefit-pill">Instrutores inclusos</div>
+          </div>
+
+        </div>
+
+        <!-- Banner com Foto Real do Coach -->
+        <div class="coach-feature-box">
+          <div class="coach-img-col">
+            <img src="assets/images/coach_training.jpg" alt="Instrutora amigável auxiliando trabalhador no treino rápido e seguro" width="600" height="450" class="coach-img">
+          </div>
+          <div class="coach-text-col">
+            <span class="badge-pill badge-pink-soft">ATENDIMENTO ACOLHEDOR</span>
+            <h3 class="coach-title">"Nunca pisei numa academia antes. Vou passar vergonha?"</h3>
+            <p class="coach-desc">
+              <strong>De jeito nenhum!</strong> Mais de 60% dos nossos alunos nunca tinham treinado antes. Nossos professores entendem o cansaço do dia a dia, montam exercícios simples e adaptados para proteger suas articulações e aliviar as dores da rotina.
+            </p>
+            <div class="coach-badges">
+              <div class="coach-stat">
+                <span class="coach-num">100%</span>
+                <span class="coach-label">Orientação na sala</span>
+              </div>
+              <div class="coach-stat">
+                <span class="coach-num">0</span>
+                <span class="coach-label">Cobrança extra por ficha</span>
+              </div>
+              <div class="coach-stat">
+                <span class="coach-num">45min</span>
+                <span class="coach-label">Treino completo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. CARDS DE PLANOS E PREÇOS (GRADE COMPARATIVA) -->
+    <section class="pricing-section" id="planos">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="badge-pill badge-pink-soft">
+            <span>PREÇOS POPULARES E TRANSPARENTES</span>
+          </div>
+          <h2 class="section-title">
+            Escolha o plano que cabe certinho no seu salário
+          </h2>
+          <p class="section-subtitle">
+            Sem pegadinhas, sem taxas surpresas no balcão e com cancelamento simplificado.
+          </p>
+
+          <!-- Toggle Mensal / Trimestral -->
+          <div class="pricing-toggle-wrapper">
+            <span class="toggle-label" id="label-mensal">Mensal</span>
+            <button class="toggle-btn" id="plan-billing-toggle" aria-label="Alternar entre mensal e trimestral" role="switch" aria-checked="false">
+              <span class="toggle-thumb"></span>
+            </button>
+            <span class="toggle-label" id="label-trimestral">
+              Trimestral <span class="discount-tag">Economize 20%</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          
+          <!-- Plano 1: Express Trabalhador -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <span class="plan-category">Econômico</span>
+              <h3 class="plan-name">Plano Trabalhador Express</h3>
+              <p class="plan-description">Para quem tem horário certo e quer treinar rápido sem gastar muito.</p>
+            </div>
+            
+            <div class="plan-price-box">
+              <div class="price-currency">R$</div>
+              <div class="price-value" data-monthly="69" data-quarterly="59">69</div>
+              <div class="price-period">
+                <span class="price-cents">,90</span>
+                <span class="price-freq">/mês</span>
+              </div>
+            </div>
+
+            <div class="plan-badge-promo">⚡ Matrícula R$ 0 inclusa</div>
+
+            <ul class="plan-features">
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Acesso nos horários de menor fluxo (09h-16h e 20h-23h)</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Ficha de treino rápido de 45 minutos</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Acesso à musculação e área de cardio</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Acompanhamento dos instrutores de salão</span>
+              </li>
+              <li class="disabled">
+                <span class="cross-icon">✕</span>
+                <span>Acesso livre em horários de pico</span>
+              </li>
+            </ul>
+
+            <div class="pricing-cta">
+              <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20garantir%20minha%20vaga%20no%20Plano%20Trabalhador%20Express%20com%20Matr%C3%ADcula%20Zero!" class="btn btn-outline btn-block btn-pill" target="_blank" rel="noopener noreferrer">
+                Assinar Plano Express
+              </a>
+            </div>
+          </div>
+
+          <!-- Plano 2: Bairro Total (O MAIS ESCOLHIDO / DESTAQUE) -->
+          <div class="pricing-card popular-card shadow-card-green">
+            <div class="popular-ribbon">
+              <span>★ O MAIS ESCOLHIDO DO BAIRRO</span>
+            </div>
+
+            <div class="pricing-card-header">
+              <span class="plan-category highlight-category">Mais Completo & Livre</span>
+              <h3 class="plan-name">Plano Bairro Total</h3>
+              <p class="plan-description">Liberdade total de horários para quem tem rotina imprevisível.</p>
+            </div>
+            
+            <div class="plan-price-box">
+              <div class="price-currency">R$</div>
+              <div class="price-value highlight-value" data-monthly="89" data-quarterly="74">89</div>
+              <div class="price-period">
+                <span class="price-cents">,90</span>
+                <span class="price-freq">/mês</span>
+              </div>
+            </div>
+
+            <div class="plan-badge-promo badge-green-glow">⚡ Matrícula Grátis + Avaliação Inclusa</div>
+
+            <ul class="plan-features">
+              <li>
+                <span class="check-icon highlight-check">✓</span>
+                <strong>Horário 100% Livre (05:00 às 23:00)</strong>
+              </li>
+              <li>
+                <span class="check-icon highlight-check">✓</span>
+                <span>Acesso total à musculação e cardio</span>
+              </li>
+              <li>
+                <span class="check-icon highlight-check">✓</span>
+                <span>Circuito Funcional Express e Aulas Coletivas</span>
+              </li>
+              <li>
+                <span class="check-icon highlight-check">✓</span>
+                <span>Ficha personalizada com troca periódica</span>
+              </li>
+              <li>
+                <span class="check-icon highlight-check">✓</span>
+                <span>Armários rotativos e duchas quentes</span>
+              </li>
+              <li>
+                <span class="check-icon highlight-check">✓</span>
+                <span>Sem taxa de anuidade e sem multa abusiva</span>
+              </li>
+            </ul>
+
+            <div class="pricing-cta">
+              <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20aproveitar%20a%20promo%C3%A7%C3%A3o%20do%20Plano%20Bairro%20Total%20com%20Matr%C3%ADcula%20Gr%C3%A1tis!" class="btn btn-primary btn-block btn-pill shadow-glow pulse-hover" target="_blank" rel="noopener noreferrer">
+                Garantir Vaga no Bairro Total
+              </a>
+              <span class="pricing-note">Cancelamento a qualquer momento</span>
+            </div>
+          </div>
+
+          <!-- Plano 3: Dupla / Família -->
+          <div class="pricing-card">
+            <div class="pricing-card-header">
+              <span class="plan-category">Economia em Dobro</span>
+              <h3 class="plan-name">Plano Dupla / Amigo</h3>
+              <p class="plan-description">Treine com seu parceiro(a), amigo de trabalho ou familiar e pague menos.</p>
+            </div>
+            
+            <div class="plan-price-box">
+              <div class="price-currency">R$</div>
+              <div class="price-value" data-monthly="149" data-quarterly="129">149</div>
+              <div class="price-period">
+                <span class="price-cents">,90</span>
+                <span class="price-freq">/mês total</span>
+              </div>
+            </div>
+
+            <div class="plan-badge-promo">⚡ Sai R$ 74,95 para cada um!</div>
+
+            <ul class="plan-features">
+              <li>
+                <span class="check-icon">✓</span>
+                <span>2 pessoas com acesso livre total (05h-23h)</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Musculação + Cardio + Funcional</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Duas fichas individuais personalizadas</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Matrícula Zero para os 2 participantes</span>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <span>Motivação mútua para não furar o treino</span>
+              </li>
+            </ul>
+
+            <div class="pricing-cta">
+              <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20cadastrar%20o%20Plano%20Dupla%20com%20Matr%C3%ADcula%20Zero!" class="btn btn-outline btn-block btn-pill" target="_blank" rel="noopener noreferrer">
+                Assinar Plano Dupla
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="payment-guarantee-strip">
+          <div class="pay-item">
+            <span class="pay-icon">🔒</span>
+            <span>Sem pegadinha no limite do cartão (débito recorrente disponível)</span>
+          </div>
+          <div class="pay-item">
+            <span class="pay-icon">💳</span>
+            <span>Aceitamos Pix, Cartão, Débito e Boleto</span>
+          </div>
+          <div class="pay-item">
+            <span class="pay-icon">🛡️</span>
+            <span>Garantia total de 7 dias ou seu dinheiro de volta</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. SEÇÃO DE ENDEREÇO COMPLETO E HORÁRIOS DE FUNCIONAMENTO -->
+    <section class="location-section" id="localizacao">
+      <div class="container">
+        <div class="section-heading text-center">
+          <div class="badge-pill badge-green-soft">
+            <span>PERTINHO DO SEU TRAJETO</span>
+          </div>
+          <h2 class="section-title">
+            Fácil de chegar a pé, de ônibus ou de moto
+          </h2>
+          <p class="section-subtitle">
+            Localizada no coração comercial do bairro para não desviar do seu caminho diário.
+          </p>
+        </div>
+
+        <div class="location-grid">
+          
+          <!-- Informações de Endereço e Horários -->
+          <div class="location-info-card">
+            
+            <!-- Endereço com Destaque -->
+            <div class="address-box">
+              <div class="address-icon-bubble">
+                <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="address-details">
+                <span class="address-label">Nosso Endereço:</span>
+                <strong class="address-street">Av. do Trabalhador, 1.420 - Centro Comercial</strong>
+                <p class="address-ref">
+                  📍 <strong>Pontos de referência:</strong> Em frente à Padaria Rainha do Bairro e a apenas <strong>150 metros do Terminal Central de Ônibus</strong>.
+                </p>
+                <div class="transport-chips">
+                  <span class="chip">🚌 Ponto na porta</span>
+                  <span class="chip">🛵 Estacionamento de motos grátis</span>
+                  <span class="chip">🚲 Bicicletário seguro</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Grade de Horários Completa -->
+            <div class="hours-card">
+              <div class="hours-header">
+                <div class="hours-title">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Horários de Funcionamento</span>
+                </div>
+                <div class="hours-status-badge" id="live-hours-badge">
+                  <span class="pulse-dot"></span>
+                  <span id="live-hours-text">Aberto Agora</span>
+                </div>
+              </div>
+
+              <div class="hours-table">
+                <div class="hours-row highlight-row">
+                  <span class="day-name">Segunda a Sexta-feira:</span>
+                  <span class="day-time"><strong>05:00</strong> às <strong>23:00</strong> (Direto sem fechar)</span>
+                </div>
+                <div class="hours-row">
+                  <span class="day-name">Sábados:</span>
+                  <span class="day-time"><strong>08:00</strong> às <strong>18:00</strong></span>
+                </div>
+                <div class="hours-row">
+                  <span class="day-name">Domingos e Feriados:</span>
+                  <span class="day-time"><strong>08:00</strong> às <strong>14:00</strong></span>
+                </div>
+              </div>
+
+              <div class="hours-tip">
+                💡 <strong>Dica do Instrutor:</strong> Os horários de menor fluxo são das 09h às 11h30 e das 13h30 às 16h. Ideal para quem trabalha em escala!
+              </div>
+            </div>
+
+            <div class="directions-actions">
+              <a href="https://maps.google.com/?q=Av.+do+Trabalhador+1420" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-block btn-pill">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                </svg>
+                <span>Abrir no Google Maps / Waze</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Mapa Visual Estilizado & Interativo -->
+          <div class="map-visual-card">
+            <div class="map-card-inner">
+              <div class="map-mockup">
+                <!-- SVG Stylized Local Map with Road Network -->
+                <svg class="map-vector" viewBox="0 0 600 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Background -->
+                  <rect width="600" height="450" fill="#F1F5F9"/>
+                  <!-- Blocks / Neighborhood buildings -->
+                  <rect x="30" y="30" width="120" height="80" rx="12" fill="#E2E8F0"/>
+                  <rect x="180" y="30" width="160" height="80" rx="12" fill="#E2E8F0"/>
+                  <rect x="370" y="30" width="190" height="80" rx="12" fill="#E2E8F0"/>
+                  
+                  <rect x="30" y="140" width="100" height="140" rx="12" fill="#E2E8F0"/>
+                  <rect x="420" y="140" width="150" height="140" rx="12" fill="#E2E8F0"/>
+
+                  <rect x="30" y="310" width="160" height="100" rx="12" fill="#E2E8F0"/>
+                  <rect x="220" y="310" width="140" height="100" rx="12" fill="#E2E8F0"/>
+                  <rect x="390" y="310" width="180" height="100" rx="12" fill="#E2E8F0"/>
+
+                  <!-- Roads -->
+                  <!-- Vertical Main Street -->
+                  <path d="M160 0V450" stroke="#CBD5E1" stroke-width="28"/>
+                  <path d="M160 0V450" stroke="#94A3B8" stroke-width="2" stroke-dasharray="8 8"/>
+                  <!-- Horizontal Main Ave: Av. do Trabalhador -->
+                  <path d="M0 200H600" stroke="#CBD5E1" stroke-width="36"/>
+                  <path d="M0 200H600" stroke="#94A3B8" stroke-width="2" stroke-dasharray="10 10"/>
+
+                  <path d="M380 0V450" stroke="#CBD5E1" stroke-width="24"/>
+                  
+                  <!-- Labels on map -->
+                  <text x="18" y="195" fill="#475569" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700">AV. DO TRABALHADOR</text>
+                  <text x="175" y="25" fill="#64748B" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">RUA DO COMÉRCIO</text>
+                  
+                  <!-- Landmarks -->
+                  <g transform="translate(60, 80)">
+                    <rect width="110" height="28" rx="14" fill="#FFFFFF" stroke="#CBD5E1"/>
+                    <text x="10" y="18" fill="#334155" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">🍞 Padaria Rainha</text>
+                  </g>
+
+                  <g transform="translate(410, 80)">
+                    <rect width="130" height="28" rx="14" fill="#FFFFFF" stroke="#CBD5E1"/>
+                    <text x="10" y="18" fill="#334155" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">🚌 Terminal Central</text>
+                  </g>
+
+                  <!-- GYM Pin Location (Central Highlight) -->
+                  <circle cx="280" cy="200" r="42" fill="#10B981" fill-opacity="0.2" class="radar-circle"/>
+                  <circle cx="280" cy="200" r="28" fill="#10B981" fill-opacity="0.4"/>
+                  <circle cx="280" cy="200" r="14" fill="#10B981"/>
+                  
+                  <!-- Gym Card Tooltip -->
+                  <g transform="translate(200, 105)">
+                    <rect width="160" height="54" rx="16" fill="#0F172A" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.2))"/>
+                    <text x="15" y="24" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="800">PULSO FIT BAIRRO</text>
+                    <text x="15" y="42" fill="#10B981" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" font-weight="600">● Você Chegou Aqui!</text>
+                  </g>
+                </svg>
+
+                <div class="map-overlay-banner">
+                  <div class="map-banner-info">
+                    <strong>Como Chegar:</strong>
+                    <span>Descendo no Terminal Central, atravesse a faixa e vire à direita. Estamos a 2 minutos a pé!</span>
+                  </div>
+                  <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary btn-pill">
+                    Traçar Rota
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. SEÇÃO DE PROVA SOCIAL E FAQ RÁPIDO (PERGUNTAS FREQUENTES) -->
+    <section class="social-faq-section" id="depoimentos">
+      <div class="container">
+        
+        <!-- PROVA SOCIAL: DEPOIMENTOS DE TRABALHADORES REAIS -->
+        <div class="section-heading text-center">
+          <div class="badge-pill badge-pink-soft">
+            <span>QUEM FREQUENTA RECOMENDA</span>
+          </div>
+          <h2 class="section-title">
+            Gente como você que encaixou a saúde na rotina
+          </h2>
+          <p class="section-subtitle">
+            Veja como trabalhadores do bairro estão transformando seu dia a dia em 45 minutos.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <!-- Depoimento 1 -->
+          <div class="testimonial-card">
+            <div class="test-header">
+              <div class="test-avatar avatar-carlos">CM</div>
+              <div class="test-meta">
+                <strong class="test-name">Carlos Maurício</strong>
+                <span class="test-role">Motorista de Aplicativo • 38 anos</span>
+              </div>
+            </div>
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">
+              "Passo 10 horas sentado no carro e minhas costas me matavam. Comecei vindo às 6h da manhã. O treino de 45 minutos é direto ao ponto, não fico esperando aparelho desocupar e saio renovado para rodar o dia inteiro."
+            </p>
+            <div class="test-tag">Treina há 6 meses</div>
+          </div>
+
+          <!-- Depoimento 2 -->
+          <div class="testimonial-card highlight-testimonial">
+            <div class="test-header">
+              <div class="test-avatar avatar-juliana">JS</div>
+              <div class="test-meta">
+                <strong class="test-name">Juliana Silveira</strong>
+                <span class="test-role">Atendente de Farmácia • 27 anos</span>
+              </div>
+            </div>
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">
+              "Sempre tive vergonha de academia por achar que todo mundo ia ficar me olhando ou que os professores só davam atenção pra quem já era fitness. Na Pulso Fit foi o oposto: os instrutores me ensinaram cada aparelho com carinho e sem frescura!"
+            </p>
+            <div class="test-tag tag-pink">Nunca tinha treinado</div>
+          </div>
+
+          <!-- Depoimento 3 -->
+          <div class="testimonial-card">
+            <div class="test-header">
+              <div class="test-avatar avatar-marcos">MV</div>
+              <div class="test-meta">
+                <strong class="test-name">Marcos Vinícius</strong>
+                <span class="test-role">Metalúrgico • 44 anos</span>
+              </div>
+            </div>
+            <div class="test-stars">★★★★★</div>
+            <p class="test-quote">
+              "O preço é muito justo e não tem pegadinha de anuidade ou contrato que te prende. Venho no final do meu turno às 18h30 e mesmo nesse horário consigo fazer minha ficha sem fila porque a academia é bem equipada."
+            </p>
+            <div class="test-tag">Plano Bairro Total</div>
+          </div>
+
+        </div>
+
+        <!-- FAQ RÁPIDO EM FORMATO SANFONA (ACCORDION) -->
+        <div class="faq-container" id="faq">
+          <div class="faq-header text-center">
+            <div class="badge-pill badge-green-soft">
+              <span>TIRE SUAS DÚVIDAS</span>
+            </div>
+            <h3 class="faq-title">Perguntas Frequentes (Sem Enrolação)</h3>
+            <p class="faq-subtitle">Tudo o que você precisa saber antes de dar o primeiro passo.</p>
+          </div>
+
+          <div class="accordion-wrapper">
+            
+            <!-- Pergunta 1 -->
+            <div class="accordion-item active">
+              <button class="accordion-button" aria-expanded="true" aria-controls="faq-ans-1" id="faq-q-1">
+                <span class="faq-q-text">1. Tem taxa de matrícula, adesão ou anuidade escondida?</span>
+                <span class="accordion-icon"></span>
+              </button>
+              <div class="accordion-panel" id="faq-ans-1" role="region" aria-labelledby="faq-q-1">
+                <div class="accordion-content">
+                  <p><strong>Não!</strong> Na promoção atual do nosso lote do trabalhador, a <strong>Matrícula é R$ 0,00</strong>. Além disso, não cobramos taxa de adesão nem anuidade/manutenção anual no final do ano. Você só paga a mensalidade contratada, de forma clara e limpa.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="accordion-item">
+              <button class="accordion-button" aria-expanded="false" aria-controls="faq-ans-2" id="faq-q-2">
+                <span class="faq-q-text">2. Se eu precisar cancelar ou mudar de turno no trabalho, pago multa?</span>
+                <span class="accordion-icon"></span>
+              </button>
+              <div class="accordion-panel" id="faq-ans-2" role="region" aria-labelledby="faq-q-2" hidden>
+                <div class="accordion-content">
+                  <p>Nossos planos mensais não possuem fidelidade forçada nem multas abusivas. Se precisar cancelar, basta avisar na recepção ou pelo WhatsApp com 30 dias de antecedência. Se mudar de turno no trabalho, você também pode migrar de horário livremente.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="accordion-item">
+              <button class="accordion-button" aria-expanded="false" aria-controls="faq-ans-3" id="faq-q-3">
+                <span class="faq-q-text">3. Como vocês garantem que não tem fila nos aparelhos?</span>
+                <span class="accordion-icon"></span>
+              </button>
+              <div class="accordion-panel" id="faq-ans-3" role="region" aria-labelledby="faq-q-3" hidden>
+                <div class="accordion-content">
+                  <p>Nós investimos pesado em <strong>máquinas duplicadas</strong> nos exercícios mais procurados (como supinos, esteiras, puxadores e leg press) e organizamos os treinos no modelo de ficha em circuito inteligente. Assim, o fluxo de pessoas flui sem pausas longas.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div class="accordion-item">
+              <button class="accordion-button" aria-expanded="false" aria-controls="faq-ans-4" id="faq-q-4">
+                <span class="faq-q-text">4. Nunca treinei na vida. Preciso pagar personal trainer por fora?</span>
+                <span class="accordion-icon"></span>
+              </button>
+              <div class="accordion-panel" id="faq-ans-4" role="region" aria-labelledby="faq-q-4" hidden>
+                <div class="accordion-content">
+                  <p><strong>Não precisa!</strong> Todos os nossos planos incluem acompanhamento constante dos nossos professores na sala. No seu primeiro dia, você passa por uma integração amigável, onde montamos seu treino rápido de 45 minutos e ensinamos a regular cada aparelho.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div class="accordion-item">
+              <button class="accordion-button" aria-expanded="false" aria-controls="faq-ans-5" id="faq-q-5">
+                <span class="faq-q-text">5. Quais as formas de pagamento aceitas? Precisa de limite no cartão?</span>
+                <span class="accordion-icon"></span>
+              </button>
+              <div class="accordion-panel" id="faq-ans-5" role="region" aria-labelledby="faq-q-5" hidden>
+                <div class="accordion-content">
+                  <p>Aceitamos <strong>Pix, Cartão de Crédito na modalidade de débito recorrente (não bloqueia o limite total do seu cartão, cobra apenas a parcela mensal), Cartão de Débito e Boleto Bancário</strong>. Você escolhe o que for mais cômodo para o seu orçamento.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BANNER FINAL DE CONVERSÃO -->
+    <section class="final-cta-section">
+      <div class="container">
+        <div class="final-cta-card">
+          <div class="final-cta-content">
+            <span class="badge-pill badge-pink-soft">ÚLTIMA CHANCE HOJE</span>
+            <h2 class="final-title">Seu corpo e sua saúde não podem esperar mais um ano</h2>
+            <p class="final-subtitle">Dê o primeiro passo com Matrícula Zero. Comece hoje mesmo a treinar perto de casa sem perder tempo!</p>
+            <div class="final-buttons">
+              <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20fazer%20minha%20matr%C3%ADcula%20promocional%20com%20Matr%C3%ADcula%20Zero%20agora!" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xl btn-pill shadow-glow">
+                <span>Quero Minha Matrícula Zero Agora</span>
+                <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                  <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                </svg>
+              </a>
+              <a href="#localizacao" class="btn btn-ghost-light btn-xl btn-pill">
+                <span>Ver Como Chegar &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 10. BOTÃO FLUTUANTE DO WHATSAPP -->
+  <aside class="whatsapp-float-container" aria-label="Atendimento via WhatsApp">
+    <!-- Tooltip interativo -->
+    <div class="whatsapp-tooltip" id="whatsapp-tooltip">
+      <div class="tooltip-header">
+        <span class="tooltip-dot"></span>
+        <strong>Recepção Online</strong>
+      </div>
+      <p class="tooltip-msg">Olá! Quer tirar dúvidas ou garantir a <strong>Matrícula Zero</strong> agora?</p>
+      <button class="tooltip-close" id="close-whatsapp-tooltip" aria-label="Fechar mensagem">&times;</button>
+    </div>
+
+    <!-- Botão Redondo com Pulso -->
+    <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Vi%20a%20promo%C3%A7%C3%A3o%20de%20Matr%C3%ADcula%20Zero%20no%20site%20e%20quero%20garantir%20minha%20vaga!" 
+       class="whatsapp-float-btn" 
+       id="whatsapp-btn"
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Falar com a recepção no WhatsApp">
+      <span class="whatsapp-pulse"></span>
+      <svg viewBox="0 0 32 32" width="34" height="34" fill="currentColor">
+        <path d="M16 2a13.9 13.9 0 0 0-12 21L2 30l7.2-1.9A14 14 0 1 0 16 2zm0 25.5a11.5 11.5 0 0 1-5.9-1.6l-.4-.3-4.4 1.1 1.2-4.3-.3-.4A11.6 11.6 0 1 1 16 27.5zm6.4-8.6c-.3-.2-2-.9-2.3-1s-.6-.2-.8.2-.9 1-1.1 1.2-.4.3-.7.1a9 9 0 0 1-2.7-1.6 9.8 9.8 0 0 1-1.8-2.3c-.2-.3 0-.5.2-.7s.3-.4.5-.6.2-.3.3-.5a.6.6 0 0 0 0-.6c-.1-.2-.8-2-1.1-2.7s-.6-.6-.8-.6h-.7a1.4 1.4 0 0 0-1 .5 4.3 4.3 0 0 0-1.4 3.2 7.5 7.5 0 0 0 1.6 4 17.2 17.2 0 0 0 6.6 5.8c.8.3 1.4.5 1.9.7a4.6 4.6 0 0 0 2.1.1 3.5 3.5 0 0 0 2.3-1.6 2.8 2.8 0 0 0 .2-1.6c-.1-.2-.4-.3-.7-.5z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- 11. RODAPÉ LIMPO (FOOTER) -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+            <span>PULSO<strong>FIT</strong></span>
+          </div>
+          <p class="footer-tagline">A academia inteligente, rápida e acessível feita para o trabalhador de bairro.</p>
+        </div>
+
+        <div class="footer-contact">
+          <span class="footer-heading">Atendimento & Endereço</span>
+          <p>Av. do Trabalhador, 1.420 - Centro Comercial</p>
+          <p>WhatsApp: (11) 99999-9999 • Seg a Sex: 05h às 23h</p>
+        </div>
+
+        <div class="footer-legal-links">
+          <span class="footer-heading">Segurança & Transparência</span>
+          <ul class="footer-links-list">
+            <li><a href="#termos" class="footer-link" id="link-termos">Termos de Uso</a></li>
+            <li><a href="#privacidade" class="footer-link" id="link-privacidade">Política de Privacidade</a></li>
+            <li><a href="#codigo-consumidor" class="footer-link" id="link-cdc">Código de Defesa do Consumidor</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Academia Pulso Fit do Bairro Ltda. Todos os direitos reservados. CNPJ: 45.892.124/0001-90.
+        </p>
+        <p class="footer-subtext">
+          Feito com foco em saúde real, acessibilidade e agilidade para o cotidiano popular.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Simples de Políticas / Termos -->
+  <div class="legal-modal-backdrop" id="legal-modal" hidden>
+    <div class="legal-modal-card">
+      <div class="legal-modal-header">
+        <h3 id="legal-modal-title">Informações Legais</h3>
+        <button class="btn-close-modal" id="close-legal-modal" aria-label="Fechar janela">&times;</button>
+      </div>
+      <div class="legal-modal-body" id="legal-modal-body">
+        <!-- Preenchido dinamicamente via JS -->
+      </div>
+      <div class="legal-modal-footer">
+        <button class="btn btn-primary btn-pill btn-sm" id="btn-ok-legal">Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
